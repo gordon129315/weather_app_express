@@ -1,22 +1,24 @@
-# weather_app_express
+## weather app express
+
+### GitHub
+[https://github.com/gordon129315](https://github.com/gordon129315)
 
 ### Get Start
-Install all dependencies modules
+1. Install all dependencies modules:
 ```
 $ npm install
 ```
 
-Run the app
+2. Run the app:
 ```
 $ npm run start
 ```
 
-Open browser
+3. Open browser:
 ```
 http://localhost:3000/
 ```
 
 ### Preview
-```
-https://gordon-weather-app.herokuapp.com/
-```
+[https://gordon-weather-app.herokuapp.com/](https://gordon-weather-app.herokuapp.com/)
+

@@ -1,7 +1,8 @@
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
-
+const md = require('markdown').markdown
+const fs = require('fs')
 
 const app = express()
 const port = process.env.PORT || 3000  //PORT has to be in capital
@@ -29,9 +30,14 @@ app.get('', (req, res) => {
 })
 
 app.get('/help', (req, res) => {
+    let str = fs.readFileSync('./README.md', 'utf-8')
+    // console.log(str)
+    str = md.toHTML(str)
+
     res.render('help', {
         title: 'Help Page',
-        text: 'some helpful text',
+        // text: 'some helpful text',
+        text: str,
         name: 'Gordon'
     })
 })
