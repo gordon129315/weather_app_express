@@ -1,7 +1,7 @@
 ## weather app express
 
 ### GitHub
-[https://github.com/gordon129315](https://github.com/gordon129315)
+[https://github.com/gordon129315/weather_app_express](https://github.com/gordon129315/weather_app_express)
 
 ### Get Start
 1. Install all dependencies modules:
