@@ -4,7 +4,8 @@
     <title>{{title}}</title>
     <link rel="icon" href="/img/weather.png">
     <link rel="stylesheet" href="/css/styles.css">
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/places.js@1.16.4"></script>
   </head>
   <body>
     <div class="main-contain">
@@ -12,7 +13,7 @@
       <p>Use this site to get your weather</p>
 
       <form>
-        <input placeholder="location" id="myinput">
+        <input placeholder="location" id="city">
         <button>Search</button>
       </form>
 
@@ -25,8 +26,19 @@
     {{>footer}}  
   </body>
 
-  <script src="/js/app.js"></script>
+  <script>
+    (function() {
+      var placesAutocomplete = places({
+        appId: 'pl3RMDGQ5TNW',
+        apiKey: '96a5450b18f9742013488270151061b3',
+        container: document.querySelector('#city')
+      });
 
+    })();
+  </script>
+
+  <script src="/js/app.js"></script>
+  
 </html>
 
 

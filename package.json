@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "all-the-cities": "^2.0.1",
     "express": "^4.17.1",
     "hbs": "^4.0.4",
     "markdown": "^0.5.0",
