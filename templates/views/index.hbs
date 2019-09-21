@@ -26,19 +26,18 @@
     {{>footer}}  
   </body>
 
+  <script src="/js/resource.js"></script>
   <script>
     (function() {
       var placesAutocomplete = places({
-        appId: 'pl3RMDGQ5TNW',
-        apiKey: '96a5450b18f9742013488270151061b3',
+        appId,
+        apiKey,
         container: document.querySelector('#city')
       });
-
     })();
   </script>
 
   <script src="/js/app.js"></script>
-  
 </html>
 
 
